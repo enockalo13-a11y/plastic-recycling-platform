@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Request a plastic pickup</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Plastic Recycling Platform</h1>
+    <nav>
+      <a href="index.html">Request pickup</a>
+      <a href="aggregator.html">Aggregator view</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Request a free pickup</h2>
+      <p class="muted">Sorted plastic is collected from your home at no cost to you.</p>
+
+      <form id="pickup-form">
+        <label for="name">Your name</label>
+        <input id="name" name="name" required>
+
+        <label for="phone">Phone number</label>
+        <input id="phone" name="phone" type="tel" required>
+
+        <label for="area">Area / neighbourhood</label>
+        <input id="area" name="area" required>
+
+        <label for="type">Type of plastic</label>
+        <select id="type" name="type">
+          <option>Water sachets</option>
+          <option>Plastic bottles (PET)</option>
+          <option>Mixed plastic</option>
+        </select>
+
+        <label for="amount">Approximate amount</label>
+        <select id="amount" name="amount">
+          <option>One bag</option>
+          <option>Two to three bags</option>
+          <option>More than three bags</option>
+        </select>
+
+        <button type="submit">Request pickup</button>
+        <p id="status" class="status" role="status"></p>
+      </form>
+    </div>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
